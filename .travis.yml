@@ -1,4 +1,5 @@
-script:
+script: 
+  - echo "Deploying via Firebase"
 deploy:
   provider: firebase
   token:
