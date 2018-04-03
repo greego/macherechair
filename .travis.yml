@@ -1,4 +1,8 @@
-language: JAVASCRIPT
+language: node_js
+node_js:
+ — “7”
+script:
+ — echo “Deploy!!”
 
 deploy:
   provider: firebase
