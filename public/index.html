@@ -2,21 +2,50 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Ma Chère Chair">
+    <meta name="author" content="Ma Chère Chair">
     <title>Ma Chère Chair</title>
     <link href="https://fonts.googleapis.com/css?family=Leckerli+One|Work+Sans:300" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <style>
-     .main{font-family: 'Leckerli One', cursive; font-size: 50px;}
-     .aux{font-family: 'Work Sans', sans-serif; font-size: 50px;}
-     .aux-small{font-family: 'Work Sans', sans-serif; font-size: 15px;}
-     body{line-height: 0px; text-align: center;}
-    </style>
-  </head>
+      .main{font-family: "Leckerli One", cursive; font-size: 50px; margin-top: 24px; }
+      .aux{font-family: "Work Sans", sans-serif; font-size: 50px; line-height: 0;}
+      .leave-space-above{margin-top: 48px;}
+      .btn {text-transform: uppercase; font-family: "Work Sans", sans-serif; font-weight: 400; -webkit-transition: all 0.3s ease-in-out; 
+           -moz-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; border-radius: 0; }
+      .btn-default {border: 1px solid rgb(53, 54, 54); color: rgb(0, 0, 0); background-color: transparent; }
+      .btn-default:hover,
+      .btn-default:focus { border: 1px solid rgb(0, 0, 0); outline: none; color: black; background-color: rgb(247, 212, 229); }
+      </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
   <body>
-    <p class='main'>Ma Chère</p>
-    <p class='aux'>C h a i r</p>
-    <img src="chair.png"/>
-    <p><a href="https://www.instagram.com/ma_chere_chair/" title="Ma Chère Chair - Instagram"><i class="fa fa-instagram fa-fw"></i></a></p>
+    <!-- Home Section -->
+    <header class="intro text-center container leave-space-above">
+        <div class="intro-body ">
+            <img class="main" src="logo.png"/>
+        </div>
+    </header>
+ 
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center leave-space-above">
+      <ul class="list-inline banner-social-buttons">
+        <li class="list-inline-item">
+            <a href="mailto:macherechair@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i></a>
+        </li>
+        <li class="list-inline-item">
+            <a href="https://fb.me/MaChereChair" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i></a>
+        </li>
+        <li class="list-inline-item">
+            <a href="https://www.instagram.com/ma_chere_chair/" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i></a>
+        </li>
+      </ul>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
   </body>
 </html>
