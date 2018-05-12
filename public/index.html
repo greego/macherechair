@@ -29,7 +29,14 @@
 
         gtag('config', 'UA-118134997-1');
       </script>
-
+      <script>
+        var trackOutboundLink = function(url) {
+          ga('send', 'event', 'outbound', 'click', url, {
+            'transport': 'beacon',
+            'hitCallback': function(){document.location = url;}
+          });
+        }
+      </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     </head>
   <body>
@@ -47,10 +54,10 @@
             <a href="mailto:macherechair@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i></a>
         </li>
         <li class="list-inline-item">
-            <a href="https://fb.me/MaChereChair" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i></a>
+            <a href="https://fb.me/MaChereChair"  onclick="trackOutboundLink('https://fb.me/MaChereChair'); return false;" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i></a>
         </li>
         <li class="list-inline-item">
-            <a href="https://www.instagram.com/ma_chere_chair/" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i></a>
+            <a href="https://www.instagram.com/ma_chere_chair/" onclick="trackOutboundLink('https://www.instagram.com/ma_chere_chair/'); return false;" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i></a>
         </li>
       </ul>
     </section>
